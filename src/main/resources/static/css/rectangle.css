@@ -1,0 +1,55 @@
+.rectangle-black {
+    width: 40vw;
+    height: 22vw;
+    display: inline-block;
+
+    border-bottom: 1px solid #FAFAFA;
+    border-right: 1px solid #FAFAFA;
+
+    background: rgba(10, 10, 10, 0.92);
+}
+
+.rectangle-white {
+    width: 40vw;
+    height: 22vw;
+    display: inline-block;
+
+    border-bottom: 1px solid #FAFAFA;
+    border-right: 1px solid #FAFAFA;
+
+    background: rgba(247, 247, 247, 0.92);
+}
+
+.rectangle-black .font-white {
+    width: 38vw;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    /* line-height: 2vw; */
+    text-align: center;
+    /* vertical-align: middle; */
+
+    color: #FFFFFF;
+}
+
+.rectangle-white .font-black {
+    width: 38vw;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    /* line-height: 4vw; */
+    text-align: center;
+    /* vertical-align: middle; */
+
+    color: #101010;
+}
+
+#split-line {
+    width: 80vw;
+    height: 1vh;
+    border-bottom: 2px dashed #DADADA;
+}
