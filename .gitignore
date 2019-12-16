@@ -32,3 +32,6 @@ build/
 
 ### Something About SSL ###
 src/main/resources/myssl.jks
+
+### Ignore Img ###
+src/main/resources/static/img/beian.png
