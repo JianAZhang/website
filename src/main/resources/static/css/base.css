@@ -1,120 +1,38 @@
-.heart-part {
-    width: 80vw;
-    margin: 0 auto;
-}
-
-header {
-    width: auto;
-}
-
-#menu {
-    position: fixed;
-    z-index: 999;
-    /* min-width: 600px;
-    width:expression_r(document.body.clientWidth < 1000 ? "1000px": "auto" ); */
-    padding-left: 3vw;
-    padding-right: 3vw;
-    width: 100%;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.92);
-    /* border-bottom: 1px solid rgb(220, 220, 220); */
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    float: right;
-}
-
-li {
-    margin-top: 10px;
-    margin-left: 10vw;
-    float: left;
-}
-
-li :active {
-    color: rgb(255, 255, 255);
-}
-
-li :hover {
-    border-bottom: 4px solid rgb(70, 70, 70);
-}
-
-li>a {
-    text-decoration: none;
-    color: rgb(214, 214, 214);
-    font-weight: bold;
-}
-
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
+.header-style {
+    background-color: #000000 !important;
+    /* padding-top: 2px; */
+    border: 2px !important;
+    padding: 0.1em !important;
 }
 
 .logo {
-    text-decoration: none;
-    font-family: "Arial Black";
+    margin-right: 40vw !important;
+    color: #DADADA !important;
+    font-style: oblique !important;
 }
 
-.logo .Jian {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 32px;
-    margin-right: 5px;
-    color: rgb(248, 34, 34);
+.menu-font {
+    margin-right: 8vw !important;
+    color: #D8D8D8 !important;
+    font-size: large !important;
 }
 
-.logo .Zhang {
-    font-family: sans-serif;
-    font-size: 20px;
-    color: rgb(153, 153, 153);
+
+
+.footer-background {
+    border-top: 1px dashed #D8D8D8 !important;
+    width: 80vw !important;
+    margin-left: 10vw !important;
 }
 
-body {
-    margin: 0;
-}
-
-.content {
-    margin-left: 10vw;
-    background-color: rgba(247, 247, 247, 0.62);
-    height: 150vh;
-}
-
-/* 
-.content #picture img{
-    width: 80vw;
-    height: 30vw;
-    margin-left: 10vw;
-} */
-
-/* 最下方 */
-footer {
-    background-color: rgb(245, 245, 247);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .footcontent{
+.footnote{
     width: 80vw;
     margin-left: 10vw;
-    height: 200px;
+    height: 60px;
 }
 
-footer .footnote{
-    width: 80vw;
-    margin-left: 10vw;
-    height: 70px;
-    border-top: 1px solid rgba(210, 215, 215);
-}
-
-footer .footnote #record {
-    margin-left: 1vw;
-    margin-right: 2vw;
+.footnote #record {
+    margin-right: 3vw;
     font-size: 12px;
     color: rgb(102, 102, 102);
     text-decoration: none;

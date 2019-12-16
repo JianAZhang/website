@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"></meta>
-        <title>小时了了</title>
-        <!-- 引入css初始化文件 -->
-        <link rel="stylesheet" href="./css/normalize.css"></link>
-        <!-- 基本不变的头尾样式 -->
-        <link rel="stylesheet" href="./css/base.css"></link>
-        <link rel="stylesheet" href="./css/rectangle.css"></link>
-        <!--引入图标-->
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></link>
-    </head>
-
-    <body>
-        <header>
-            <!--需要时放置简历-->
-        </header>
-        <!--目录放置-->
-        <div id="menu">
-            <a href="#" class="logo" alt="logo">
-                <span class="Jian">J</span>
-                <span class="Zhang">Zhang</span>
-            </a>
-            <nav>
-                <ul class="clearfix">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">留言</a></li>
-                    <li><a href="#" style="margin-right: 10vw;">关于我和博客</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小时了了</title>
+    <!-- 引入css初始化文件 -->
+    <link rel="stylesheet" href="./css/normalize.css"></link>
+    <!-- 基本不变的头尾样式 -->
+    <link rel="stylesheet" href="./css/base.css"></link>
+    <link rel="stylesheet" href="./css/rectangle.css"></link>
+    <!--引入图标-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></link>
+    <link rel="stylesheet" href="./semantic/semantic.min.css"></link>    
+</head>
+<body>
+    <!--Menu begin-->
+    <header class="ui attached segment header-style">
+        <div class="ui menu" style=" border: 0px !important; background-color: #000000">
+            <h2 class="ui header item logo">JianZhang</h2>
+            <a href="#" class="item menu-font"><i class="home icon"></i>首页</a>
+            <a href="#" class="item menu-font"><i class="edit icon"></i>留言</a>
+            <a href="#" class="item menu-font"><i class="id badge icon"></i>关于我</a>
         </div>
+    </header>
+    <!--Menu end-->
 
-        <div class="content"><!--主体部分开始-->
-            <div style="height: 40px;"></div>
-            <div class="content-1">
-                <div class="rectangle-black" style="cursor:pointer;" onclick="window.open('./blog.html')">
-                    <p class="font-white">@博客</p>
+    <!--Body begin-->
+    <div class="body-content">
+        <div><!--第一排两个矩形-->
+            <div class="rectangle" style="background-color: rgb(199, 8, 8); cursor:pointer;" onclick="window.open('http://mi.com')">
+                <p class="font" style="color: aliceblue;">@博客</p>
+            </div>
+            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
+                <p class="font" style="color: rgb(15, 15, 15);">@算法</p>
+            </div>
+        </div>
+        <div><!--第二排两个矩形-->
+            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
+                <p class="font" style="color: rgb(15, 15, 15); font-size: 6vw; margin-top: 5vw;">@LeetCode</p>
+            </div>
+            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
+                <p class="font" style="color: rgb(15, 15, 15);">@云计算</p>
+            </div>
+        </div>
+        <div id="split-line"></div>
+    </div>
+    <!--Body end-->
+
+    <!--Footer begin-->
+    <footer class="ui vertical segment footer-background">
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="six wide column">
+                    <p style="font-weight: bold;">最新博客</p>
                 </div>
-                <div class="rectangle-white" style="cursor:pointer;" onclick="window.open('http://www.mi.com')">
-                    <p class="font-black">@LeetCode</p>
+                <div class="six wide column">
+                    <p style="font-weight: bold;">博客分类</p>
+                </div>
+                <div class="four wide column">
+                    <img src="./img/wechat.jpg" alt="" style="width: 120px;">
                 </div>
             </div>
-            <div class="content-2">
-                <div class="rectangle-white" style="cursor:pointer;" onclick="window.open('http://www.baidu.com')">
-                    <p class="font-black">@云计算</p>
-                </div>
-                <div class="rectangle-white" style="cursor:pointer;" onclick="window.open('http://www.mi.com')">
-                    <p class="font-black">@LeetCode</p>
-                </div>
-            </div>
-            <div id="split-line"></div>
-            
-        </div><!--主题部分结束-->
-        <footer>
-            <div class="footcontent">
-            </div>
-            <div class="footnote">
-                <div style="margin-bottom: 10px;"></div>
-                <img src="./img/beian.png" style="margin-left: 1vw;"/>
-                <a id="record" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13082402000029" target="_blank">冀公网安备 13082402000029号</a>
-                <a id="record" href="http://www.beian.miit.gov.cn/"  target="_blank";>冀ICP备19036708号</a>
-                <a id="record" href="https://github.com/JianAZhang/website"  target="_blank";>Copyright © 2019. Powered By Jian Zhang</a>
-            </div>
-        </footer>
-    </body>
-    <!--设置不规则线条跟随鼠标效果-->
-    <script type="text/javascript" src="./js/canvas-nest.js"></script>
+        </div>
+    </footer>
+    <div class="footnote">
+        <div style="margin-bottom: 15px;"></div>
+        <img src="./img/beian.png" style="margin-right: 1vw;"/>
+        <a id="record" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13082402000029" target="_blank">冀公网安备 13082402000029号</a>
+        <a id="record" href="http://www.beian.miit.gov.cn/"  target="_blank";>冀ICP备19036708号</a>
+        <a id="record" href="https://github.com/JianAZhang/website"  target="_blank";>Copyright © 2019-2023.  Powered By Jian Zhang</a>
+    </div>
+    <!--Footer end-->
+
+    
+    
+</body>
+<script src="./semantic/semantic.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/canvas-nest.js"></script>
 </html>
