@@ -6,18 +6,17 @@
 }
 
 .logo {
-    margin-right: 40vw !important;
+    /* margin-right: 40vw !important; */
     color: #DADADA !important;
     font-style: oblique !important;
 }
 
 .menu-font {
-    margin-right: 8vw !important;
+    /* margin-left: 2vw !important;
+    margin-right: 3vw !important; */
     color: #D8D8D8 !important;
-    font-size: large !important;
+    font-size: medium !important;
 }
-
-
 
 .footer-background {
     border-top: 1px dashed #D8D8D8 !important;

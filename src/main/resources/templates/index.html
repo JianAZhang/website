@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,36 +12,38 @@
     <link rel="stylesheet" href="./css/rectangle.css"></link>
     <!--引入图标-->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></link>
-    <link rel="stylesheet" href="./semantic/semantic.min.css"></link>    
+    <!--为手机设计的css-->
+    <link rel="stylesheet" href="./css/mobile.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
 </head>
 <body>
     <!--Menu begin-->
-    <header class="ui attached segment header-style">
+    <header class="ui attached segment stackable header-style">
         <div class="ui menu" style=" border: 0px !important; background-color: #000000">
             <h2 class="ui header item logo">JianZhang</h2>
-            <a href="#" class="item menu-font"><i class="home icon"></i>首页</a>
-            <a href="#" class="item menu-font"><i class="edit icon"></i>留言</a>
-            <a href="#" class="item menu-font"><i class="id badge icon"></i>关于我</a>
+            <a href="#" class="right item menu-font"><i class="home icon"></i>首页</a>
+            <a href="#" class="right item menu-font"><i class="edit icon"></i>留言</a>
+            <a href="#" class="right item menu-font" style="margin-right: 10vw;"><i class="id badge icon"></i>关于我</a>
         </div>
     </header>
     <!--Menu end-->
 
     <!--Body begin-->
     <div class="body-content">
-        <div><!--第一排两个矩形-->
-            <div class="rectangle" style="background-color: rgb(199, 8, 8); cursor:pointer;" onclick="window.open('http://mi.com')">
-                <p class="font" style="color: aliceblue;">@博客</p>
+        <div class="ui mobile stackable"><!--第一排两个矩形-->
+            <div class="rectangle mobile-rectangle" style="background-color: rgb(199, 8, 8); cursor:pointer;" onclick="window.open('./blog.html')">
+                <p class="font mobile-font" style="color: aliceblue;"><i class="book icon"></i>博客</p>
             </div>
-            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
-                <p class="font" style="color: rgb(15, 15, 15);">@算法</p>
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+                <p class="font mobile-font" style="color: rgb(15, 15, 15);"><i class="bell icon"></i>算法</p>
             </div>
         </div>
-        <div><!--第二排两个矩形-->
-            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
-                <p class="font" style="color: rgb(15, 15, 15); font-size: 6vw; margin-top: 5vw;">@LeetCode</p>
+        <div class="stackable"><!--第二排两个矩形-->
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+                <p class="font mobile-font-smaller" style="color: rgb(15, 15, 15); font-size: 6vw; margin-top: 5vw;"><i class="code icon"></i>LeetCode</p>
             </div>
-            <div class="rectangle" style="background-color: rgb(247, 247, 247); cursor:pointer;" onclick="window.open('http://mi.com')">
-                <p class="font" style="color: rgb(15, 15, 15);">@云计算</p>
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+                <p class="font mobile-font" style="color: rgb(15, 15, 15);"><i class="male icon"></i>琐事</p>
             </div>
         </div>
         <div id="split-line"></div>
@@ -50,33 +52,35 @@
 
     <!--Footer begin-->
     <footer class="ui vertical segment footer-background">
-        <div class="ui container">
-            <div class="ui grid">
-                <div class="six wide column">
+        <div class="ui center aligned container">
+            <div class="ui stackable grid">
+                <div class="five wide column">
                     <p style="font-weight: bold;">最新博客</p>
                 </div>
-                <div class="six wide column">
+                <div class="five wide column">
                     <p style="font-weight: bold;">博客分类</p>
                 </div>
-                <div class="four wide column">
-                    <img src="./img/wechat.jpg" alt="" style="width: 120px;">
+                <div class="three wide column">
+                    <img src="./img/QQ.jpg" alt="" style="width: 115px;">
+                </div>
+                <div class="three wide column">
+                    <img src="./img/wechat.jpg" alt="" style="width: 115px;">
                 </div>
             </div>
         </div>
     </footer>
-    <div class="footnote">
-        <div style="margin-bottom: 15px;"></div>
-        <img src="./img/beian.png" style="margin-right: 1vw;"/>
+    <div class="ui center aligned container footnote mobile stackable">
+        <div style="margin-bottom: 2px;"></div>
+        <a id="record" href="https://github.com/JianAZhang/website" target="_blank";>Copyright © 2019-2023.  Powered By Jian Zhang</a>
+        <div style="margin-bottom: 5px;"></div>
+        <img src="./img/beian.png" style="margin-right: 2px;"/>
         <a id="record" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13082402000029" target="_blank">冀公网安备 13082402000029号</a>
         <a id="record" href="http://www.beian.miit.gov.cn/"  target="_blank";>冀ICP备19036708号</a>
-        <a id="record" href="https://github.com/JianAZhang/website"  target="_blank";>Copyright © 2019-2023.  Powered By Jian Zhang</a>
     </div>
     <!--Footer end-->
-
-    
-    
 </body>
-<script src="./semantic/semantic.min.js"></script>
-<script src="./js/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <script src="./js/canvas-nest.js"></script>
 </html>

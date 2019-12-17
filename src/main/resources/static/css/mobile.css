@@ -1,0 +1,28 @@
+@media screen and (max-width: 1080px) {
+    .mobile-rectangle {
+        width: 80vw !important;
+        height: 42vw !important;
+        border-bottom: 3px solid white !important;
+    }
+    .mobile-rectangle .mobile-font {
+        width: 78vw;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18vw;
+        margin-top: 6vw;
+        text-align: center;
+    }
+    .mobile-rectangle .mobile-font-smaller {
+        width: 78vw;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12vw !important;
+        margin-top: 6vw !important;
+        text-align: center;
+    }
+    .mobile-hide {
+        display: none !important;
+    }
+}
