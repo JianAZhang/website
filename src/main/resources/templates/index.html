@@ -9,40 +9,61 @@
     <link rel="stylesheet" href="./css/normalize.css"></link>
     <!-- 基本不变的头尾样式 -->
     <link rel="stylesheet" href="./css/base.css"></link>
-    <link rel="stylesheet" href="./css/rectangle.css"></link>
     <!--引入图标-->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></link>
     <!--为手机设计的css-->
     <link rel="stylesheet" href="./css/mobile.css"></link>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+
+    <style>
+        .rectangle {
+            width: 39vw;
+            height: 22vw;
+            display: inline-block !important;
+        }
+
+        .rectangle .font {
+            width: 38vw;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 9vw;
+            margin-top: 2vw;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!--Menu begin-->
-    <header class="ui attached segment stackable header-style">
-        <div class="ui menu" style=" border: 0px !important; background-color: #000000">
+    <header class="ui attached segment header-style">
+        <div class="ui secondary stackable menu" style=" border: 0px !important; background-color: #000000">
             <h2 class="ui header item logo">JianZhang</h2>
-            <a href="#" class="right item menu-font"><i class="home icon"></i>首页</a>
-            <a href="#" class="right item menu-font"><i class="edit icon"></i>留言</a>
-            <a href="#" class="right item menu-font" style="margin-right: 10vw;"><i class="id badge icon"></i>关于我</a>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="edit icon"></i>留言</a>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="user icon"></i>关于我</a>
+            <p style="margin-right: 10vw;"></p>
         </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show" style="display: none; margin-right: 20px;">
+            <i class="sidebar icon"></i>
+        </a>
     </header>
     <!--Menu end-->
 
     <!--Body begin-->
     <div class="body-content">
         <div class="ui mobile stackable"><!--第一排两个矩形-->
-            <div class="rectangle mobile-rectangle" style="background-color: rgb(199, 8, 8); cursor:pointer;" onclick="window.open('./blog.html')">
+            <div class="rectangle mobile-rectangle" style="background-color: rgb(194, 9, 9); cursor:pointer;" onclick="window.open('blog')">
                 <p class="font mobile-font" style="color: aliceblue;"><i class="book icon"></i>博客</p>
             </div>
-            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('blog')">
                 <p class="font mobile-font" style="color: rgb(15, 15, 15);"><i class="bell icon"></i>算法</p>
             </div>
         </div>
         <div class="stackable"><!--第二排两个矩形-->
-            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('blog')">
                 <p class="font mobile-font-smaller" style="color: rgb(15, 15, 15); font-size: 6vw; margin-top: 5vw;"><i class="code icon"></i>LeetCode</p>
             </div>
-            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('./blog.html')">
+            <div class="rectangle mobile-rectangle" style="background-color: rgba(247, 247, 247, 0.65); cursor:pointer;" onclick="window.open('blog')">
                 <p class="font mobile-font" style="color: rgb(15, 15, 15);"><i class="male icon"></i>琐事</p>
             </div>
         </div>
@@ -61,9 +82,11 @@
                     <p style="font-weight: bold;">博客分类</p>
                 </div>
                 <div class="three wide column">
+                    <p style="font-weight: bold;">QQ</p>
                     <img src="./img/QQ.jpg" alt="" style="width: 115px;">
                 </div>
                 <div class="three wide column">
+                    <p style="font-weight: bold;">微信</p>
                     <img src="./img/wechat.jpg" alt="" style="width: 115px;">
                 </div>
             </div>
@@ -82,5 +105,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<script src="./js/canvas-nest.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+          $('.m-item').toggleClass('mobile-hide');
+        });
+    </script>
 </html>

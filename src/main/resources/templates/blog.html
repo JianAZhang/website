@@ -1,34 +1,76 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--    <head>-->
-<!--        <meta charset="UTF-8"/>-->
-<!--        <title>小时了了</title>-->
-<!--        &lt;!&ndash; 引入css初始化文件 &ndash;&gt;-->
-<!--        <link rel="stylesheet" href="./css/normalize.css"/>-->
-<!--        &lt;!&ndash; 基本不变的头尾样式 &ndash;&gt;-->
-<!--        <link rel="stylesheet" href="./css/base.css"/>-->
-<!--        &lt;!&ndash;引入图标&ndash;&gt;-->
-<!--        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>-->
-<!--    </head>-->
-<!--    <body>-->
-<!--        &lt;!&ndash;目录放置&ndash;&gt;-->
-<!--        <div id="menu">-->
-<!--            <a href="#" class="logo" alt="logo">-->
-<!--                <span class="Jian">J</span>-->
-<!--                <span class="Zhang">Zhang</span>-->
-<!--            </a>-->
-<!--            <nav>-->
-<!--                <ul class="clearfix">-->
-<!--                    <li><a href="#">首页</a></li>-->
-<!--                    <li><a href="#">留言</a></li>-->
-<!--                    <li><a href="#" style="margin-right: 10vw;">关于我和博客</a></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--        </div>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小时了了</title>
+    <!-- 引入css初始化文件 -->
+    <link rel="stylesheet" href="./css/normalize.css"></link>
+    <!-- 基本不变的头尾样式 -->
+    <link rel="stylesheet" href="./css/base.css"></link>
+    <!--引入图标-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"></link>
+    <!--为手机设计的css-->
+    <link rel="stylesheet" href="./css/mobile.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+</head>
+    <!--Menu begin-->
+<body>    
+    <header class="ui attached segment header-style">
+        <div class="ui secondary stackable menu" style=" border: 0px !important; background-color: #000000">
+            <h2 class="ui header item logo">JianZhang</h2>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="edit icon"></i>留言</a>
+            <a href="#" class="m-item right item menu-font mobile-hide"><i class="user icon"></i>关于我</a>
+            <p style="margin-right: 10vw;"></p>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show" style="display: none; margin-right: 20px;">
+            <i class="sidebar icon"></i>
+        </a>
+    </header>
+    <!--Menu end-->
 
-<!--        <div class="content">&lt;!&ndash;主体部分开始&ndash;&gt;-->
-<!--            <div style="height: 40px;"></div>-->
-<!--    </body>-->
-<!--    &lt;!&ndash;设置不规则线条跟随鼠标效果&ndash;&gt;-->
-<!--    <script type="text/javascript" src="./js/canvas-nest.js"></script>-->
-<!--</html>-->
+    <!--Body begin-->
+    <div class="body-content mobile-body-content-blog" style="width: 60vw">
+        <div class="m-container m-padded-tb-big">
+            <div class="ui container">
+                <div style="margin-top: 10vh;"></div>
+                <div class="ui attached segment">
+                <!--内容-->
+                    <div class="ui right aligned basic segment">
+                        <div class="ui orange basic label">原创</div>
+                    </div>
+                    <div class="blog-text-content">
+                        <!--博客的主要文字-->
+                    </div>
+
+                    <!--联系我-->
+                    <div class="ui center aligned basic segment">
+                        <button id="email-me" class="ui orange basic circular button">联系我</button>
+                    </div>
+                    <div class="ui email-mine flowing popup transition hidden">
+                        <div>Email: jianzhang_pro@foxmail.com</div>
+                    </div>
+
+                </div>
+                <div class="ui attached segment">说明</div>
+                <div class="ui attached segment">评论</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+        });
+        $('#email-me').popup({
+        popup : $('.email-mine.popup'),
+        position: 'bottom center'
+        });
+    </script>
+</html>

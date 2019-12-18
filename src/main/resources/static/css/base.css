@@ -12,10 +12,17 @@
 }
 
 .menu-font {
-    /* margin-left: 2vw !important;
-    margin-right: 3vw !important; */
+    /* margin-left: 2vw !important; */
+    /* margin-right: 3vw !important; */
     color: #D8D8D8 !important;
     font-size: medium !important;
+}
+
+.body-content {
+    height: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: rgb(245, 245, 247, 0.45);
 }
 
 .footer-background {
@@ -35,4 +42,10 @@
     font-size: 12px;
     color: rgb(102, 102, 102);
     text-decoration: none;
+}
+
+#split-line {
+    width: 80vw;
+    height: 1vh;
+    border-bottom: 2px dashed #DADADA;
 }

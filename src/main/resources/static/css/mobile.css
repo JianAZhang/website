@@ -5,16 +5,16 @@
         border-bottom: 3px solid white !important;
     }
     .mobile-rectangle .mobile-font {
-        width: 78vw;
+        width: 78vw !important;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 18vw;
-        margin-top: 6vw;
+        font-size: 18vw !important;
+        margin-top: 6vw !important;
         text-align: center;
     }
     .mobile-rectangle .mobile-font-smaller {
-        width: 78vw;
+        width: 78vw !important;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -24,5 +24,16 @@
     }
     .mobile-hide {
         display: none !important;
+    }
+    .mobile-body-content-blog {
+        width: 80vw !important;
+    }
+    .m-right-top {
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .m-mobile-show {
+        display: block !important;
     }
 }
