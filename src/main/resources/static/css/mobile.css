@@ -36,4 +36,11 @@
     .m-mobile-show {
         display: block !important;
     }
+    .m-mobile-wide {
+        width: 100% !important;
+    }
+    .m-margin-bottom-small {
+        margin-bottom: 0.5em !important;
+    
+    }
 }

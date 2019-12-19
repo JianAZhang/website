@@ -49,3 +49,8 @@
     height: 1vh;
     border-bottom: 2px dashed #DADADA;
 }
+
+.blog-text-content {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}

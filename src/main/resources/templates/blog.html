@@ -36,14 +36,15 @@
         <div class="m-container m-padded-tb-big">
             <div class="ui container">
                 <div style="margin-top: 10vh;"></div>
-                <div class="ui attached segment">
+                <div class="ui attached padded segment">
                 <!--内容-->
-                    <div class="ui right aligned basic segment">
+                    <div class="ui right aligned padded basic segment">
                         <div class="ui orange basic label">原创</div>
                     </div>
-                    <div class="blog-text-content">
+                        <h2 class="ui center aligned header">题目</h2>
                         <!--博客的主要文字-->
-                    </div>
+
+
 
                     <!--联系我-->
                     <div class="ui center aligned basic segment">
@@ -52,10 +53,101 @@
                     <div class="ui email-mine flowing popup transition hidden">
                         <div>Email: jianzhang_pro@foxmail.com</div>
                     </div>
-
                 </div>
+
                 <div class="ui attached segment">说明</div>
-                <div class="ui attached segment">评论</div>
+
+                <div class="ui attached segment">
+                    <div class="ui threaded comments center">
+                        <h3 class="ui dividing header">评论区</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                            <img src="./img/man_img.png">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="./img/woman_img.png">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                            <div class="metadata">
+                                <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                <a class="reply">回复</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="./img/man_img.png">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now</span>
+                                        </div>
+                                        <div class="text">
+                                            Elliot you are always so right :)
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">回复</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                          <a class="avatar">
+                            <img src="./img/woman2_img.png">
+                          </a>
+                          <div class="content">
+                            <a class="author">Joe Henderson</a>
+                            <div class="metadata">
+                              <span class="date">5 days ago</span>
+                            </div>
+                            <div class="text">
+                              Dude, this is awesome. Thanks so much
+                            </div>
+                            <div class="actions">
+                              <a class="reply">回复</a>
+                            </div>
+                          </div>
+                        </div>
+                        <form class="ui reply form">
+                            <div class="field">
+                                <textarea name="content" placeholder="...请输入评论信息"></textarea>
+                            </div>
+                            <div class="fields">
+                                <div class="field m-mobile-wide m-margin-bottom-small">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="nickname" placeholder="...随便取个ID吧">
+                                    </div>
+                                </div>
+                                <div class="field  m-margin-bottom-small m-mobile-wide">
+                                    <button class="ui orange button m-mobile-wide"><i class="edit icon"></i>提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
